@@ -1,0 +1,10 @@
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\bin\Debug\netstandard2.0\NCalcExpressionGenerator.deps.json
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\bin\Debug\netstandard2.0\NCalcExpressionGenerator.dll
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\bin\Debug\netstandard2.0\NCalcExpressionGenerator.pdb
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.csproj.AssemblyReference.cache
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.AssemblyInfoInputs.cache
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.AssemblyInfo.cs
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.csproj.CoreCompileInputs.cache
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.dll
+C:\Users\christianb\source\repos\sandbox\NCalcExpressionParserTestApp\NCalcExpressionGenerator\NCalcExpressionGenerator\obj\Debug\netstandard2.0\NCalcExpressionGenerator.pdb
