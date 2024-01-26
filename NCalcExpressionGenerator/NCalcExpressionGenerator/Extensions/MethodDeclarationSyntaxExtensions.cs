@@ -89,4 +89,6 @@ public static class MethodDeclarationSyntaxExtensions
     public static MethodDeclarationSyntax AddModifier(this MethodDeclarationSyntax methodSyntax,
         SyntaxKind modifier)
         => methodSyntax.AddModifiers(SyntaxFactory.Token(modifier));
+
+        
 }

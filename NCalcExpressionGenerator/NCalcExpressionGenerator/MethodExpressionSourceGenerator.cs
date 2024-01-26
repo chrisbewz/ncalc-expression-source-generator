@@ -22,12 +22,14 @@ namespace NCalcExpressionGenerator;
 [Generator]
 public class MethodExpressionSourceGenerator : ISourceGenerator
 {
-
+    /// <summary>
+    /// Regular expression to find parameters on annotated method string expressions
+    ///</summary>
     private static readonly Regex MethodParametersRegex = new(@"\[([^\]]+)\]");
     
     public void Initialize(GeneratorInitializationContext context)
     {
-        // Register an attribute syntax receiver
+        // Register an attribute syntax receiver in order to get the valid annotated method declarations
         context.RegisterForSyntaxNotifications(() => new MethodExpressionSyntaxReceiver());
     }
 
@@ -40,12 +42,16 @@ public class MethodExpressionSourceGenerator : ISourceGenerator
         // Group methods by containing class
         var methodsByClass = syntaxReceiver.Methods.GroupBy(methodSyntax =>
         {
+            // Finding the annotated method containing class name to use as reference to generate the annotated expression implementation
             var classSyntax = methodSyntax.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
+
+            // Retrieving the parent namespace of the class that contains the annotated method to include on generated code
             var namespaceSyntax = methodSyntax.Ancestors().OfType<NamespaceDeclarationSyntax>().FirstOrDefault();
+
             return (classSyntax?.Identifier.Text, namespaceSyntax?.Name.ToString());
         });
         
-        // Generate code for each class
+        // Generate code for each class declaration found
         foreach (var classGroup in methodsByClass)
         {
             var (className, namespaceName) = classGroup.Key;
@@ -66,13 +72,16 @@ public class MethodExpressionSourceGenerator : ISourceGenerator
     private string GetMethodExpression(MethodDeclarationSyntax methodSyntax)
     {
         // Retrieve the MethodExpressionAttribute
+        // Only the first attribute found is considered since only one expression 
+        // is considered valid to generate the annotated method implementation
         var attribute = methodSyntax.AttributeLists
             .SelectMany(attrList => attrList.Attributes)
             .FirstOrDefault(attribute => attribute.Name.ToString() == "MethodExpression");
 
-        // Retrieve the expression from the attribute
+        // Retrieve the expression string from the attribute found if any
         var expression = attribute?.ArgumentList?.Arguments.FirstOrDefault()?.ToString();
 
+        // TODO: Emit a error diagnostic and interrupt source generator pipeline execution since none expression was found and consequentily, no implementation will be provided to annotated method if the execution continue
         return expression ?? "/* No valid expression found */";
     }
     
@@ -83,7 +92,7 @@ public class MethodExpressionSourceGenerator : ISourceGenerator
     /// <returns></returns>
     private List<ArgumentInfo> GetMethodParameterInfo(MethodDeclarationSyntax methodSyntax)
     {
-        // Retrieve parameter information
+        // Retrieve parameter information about its name and declared type to perform validation with the attribute expression provided
         var parameters = methodSyntax.ParameterList?.Parameters ?? Enumerable.Empty<ParameterSyntax>();
 
         return parameters.Select(param => new ArgumentInfo(param.Identifier.Text, param.Type.ToString())).ToList();

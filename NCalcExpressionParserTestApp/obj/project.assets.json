@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net7.0": {
       "Antlr4.Runtime.Standard/4.13.1": {
         "type": "package",
         "compile": {
@@ -21,10 +21,10 @@
           "Antlr4.Runtime.Standard": "4.13.1"
         },
         "compile": {
-          "lib/net8.0/NCalc.dll": {}
+          "lib/net6.0/NCalc.dll": {}
         },
         "runtime": {
-          "lib/net8.0/NCalc.dll": {}
+          "lib/net6.0/NCalc.dll": {}
         }
       }
     }
@@ -64,42 +64,34 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net7.0": [
       "NCalcSync >= 3.10.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\christianb\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj",
+      "projectUniqueName": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj",
       "projectName": "NCalcExpressionParserTestApp",
-      "projectPath": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj",
-      "packagesPath": "C:\\Users\\christianb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\obj\\",
+      "projectPath": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\christianb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -110,8 +102,8 @@
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "NCalcSync": {
             "target": "Package",
@@ -134,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }
