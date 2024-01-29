@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj": {}
+    "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj": {}
   },
   "projects": {
-    "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj": {
+    "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj",
+        "projectUniqueName": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj",
         "projectName": "NCalcExpressionParserTestApp",
-        "projectPath": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/obj/",
+        "projectPath": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj",
+        "packagesPath": "C:\\Users\\christianb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\christianb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

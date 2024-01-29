@@ -4,6 +4,5 @@ public enum ParameterSeparatorOptions
 {
     SquareBrackets,
     CurlyBraces,
-
     DoubleCurlyBraces
 }

@@ -9,11 +9,9 @@ namespace NCalcExpressionParserTestApp
     {
         public static void Main(string[] args)
         {
-
             var aClass = new AClass();
-            Console.WriteLine(aClass.MultiplyNumbers(2,4));
-
+            var res = aClass.ComplexExpressionNumbers(2, 4);
+            Console.WriteLine(res);
         }
-        
     }
 }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cLQQ72XDZd8t4MiQTvWEXCOlFAPqCfeUJOwrZ7JBXWZcnFIEQN5z7MNhEXRj8oHbUS5Ptgxtv4un6LnBpOK8lA==",
+  "dgSpecHash": "5BxmVq+KdNbwHCBtIZlewbCtrxZb3vVUDK/Wij5Gx0lpHuxGzU8RHO56aOfoQdiDQ9JaBtqsHMiMnhADSHqovA==",
   "success": true,
-  "projectFilePath": "/workspaces/ncalc-expression-source-generator/NCalcExpressionParserTestApp/NCalcExpressionParserTestApp.csproj",
+  "projectFilePath": "C:\\Users\\christianb\\source\\repos\\sandbox\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp\\NCalcExpressionParserTestApp.csproj",
   "expectedPackageFiles": [
-    "/home/codespace/.nuget/packages/antlr4.runtime.standard/4.13.1/antlr4.runtime.standard.4.13.1.nupkg.sha512",
-    "/home/codespace/.nuget/packages/ncalcsync/3.10.0/ncalcsync.3.10.0.nupkg.sha512"
+    "C:\\Users\\christianb\\.nuget\\packages\\antlr4.runtime.standard\\4.13.1\\antlr4.runtime.standard.4.13.1.nupkg.sha512",
+    "C:\\Users\\christianb\\.nuget\\packages\\ncalcsync\\3.10.0\\ncalcsync.3.10.0.nupkg.sha512"
   ],
   "logs": []
 }

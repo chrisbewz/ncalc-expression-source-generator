@@ -19,8 +19,8 @@ public static class MethodDeclarationSyntaxExtensions
     public static MethodDeclarationSyntax CreateMethodDeclaration(string name, TypeSyntax returnTypeSyntax, SyntaxKind[]? modifiers,
         params ParameterSyntax[]? parametersSyntax)
     {
-        
-        var methodDeclarationSyntax = SyntaxFactory.MethodDeclaration(returnTypeSyntax, name);
+
+        MethodDeclarationSyntax methodDeclarationSyntax = SyntaxFactory.MethodDeclaration(returnTypeSyntax, name);
         if (modifiers is not null)
             methodDeclarationSyntax = methodDeclarationSyntax.AddModifiers(modifiers);
 
